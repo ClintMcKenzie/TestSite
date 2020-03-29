@@ -1,0 +1,303 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#one {
+  height: 50pt;
+  background-color: green;
+  margin: 0pt;
+  padding: 0pt;
+  text-align: center;
+}
+
+.heading {
+  color: gold;
+  font-size: 38pt;
+  line-height: 50pt;
+}
+
+body {
+  margin: 0pt;
+  height: 100%;
+  width: 100%;
+}
+
+.link {
+  font-size: 20pt;
+  text-decoration: none;
+  color: black;
+  display: inline;
+}
+
+.row {
+  display: table;
+  width: 100%;
+  height: 30pt;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.column {
+  display: table-cell;
+  background-color: lightgreen;
+  text-align: center;
+  vertical-align: middle;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+.column:first-child {
+  border-left: 0pt;
+}
+
+.column:last-child {
+  border-right: 0pt;
+}
+
+.column:hover {
+  background-color: #90d590;
+}
+
+#container1 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 419px 40% 30%;
+}
+
+#item1-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#item1-2 {
+  grid-column-start: 2;
+  grid-column-end: end;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  font-size: 18pt;
+  line-height: 30pt;
+  padding-right: 25pt;
+  text-align: justify;
+}
+
+#container2 {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 22% 22% 15% 30% 10%;
+  gap: 0px;
+  justify-items: center;
+}
+
+#item2-1-div {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: inherit;
+  width: inherit;
+}
+
+#item2-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: max-content;
+}
+
+#item2-2 {
+  grid-column-start: 3;
+  grid-column-end: end;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  font-size: 22pt;
+  align-self: center;
+  text-align: center;
+  margin-left: 10pt;
+  margin-right: 20pt;
+}
+
+#item2-3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: end;
+  font-size: 18pt;
+  align-self: center;
+  text-align: center;
+  margin-left: 20pt;
+  margin-right: 30pt;
+}
+
+#item2-4-div {
+  grid-column-start: 4;
+  grid-column-end: end;
+  grid-row-start: 4;
+  grid-row-end: end;
+  margin-right: 10px;
+}
+
+#item2-4 {
+  width: 540px;
+  margin-right: 10px;
+}
+/*
+#container3 {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 40% 40% 40% 40%;
+  gap: 0px;
+  justify-items: center;
+}
+*/
+#container3 {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 25% 25% 20% 25%;
+  gap: 0px;
+  justify-items: center;
+}
+#videodiv {
+  grid-column-start: 1;
+  grid-column-end: end;
+  width: 560px;
+  height: 315px;
+  grid-row-start: 1;
+  grid-row-end: end;
+  margin-top: 10px;
+}
+
+#video1 {
+  width: 100%;
+  justify-self: center;
+}
+
+#item3-2 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  font-size: 18pt;
+}
+
+#item3-3 {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 4;
+  grid-row-end: end;
+  font-size: 18pt;
+}
+
+#frankenstein {
+  width: 100%;
+}
+
+#contact {
+  font-size: 15pt;
+  grid-column-start: 1;
+  grid-column-end: end;
+  border-top: 1px solid gray;
+}
+
+.homepage-title-div {
+  width: 100%;
+  text-align: center;
+}
+
+.homepage-title {
+  font-size: 20pt;
+  display: inline-block;
+  border-bottom: 1pt solid gray;
+  width: 20%;
+}
+
+.homepage-text {
+  font-size: 18pt;
+  line-height: 30pt;
+  margin-left: 30pt;
+  margin-right: 30pt;
+}
+
+.spacer {
+  height: 2%;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+}
+
+th {
+  border-bottom: 1pt solid black;
+}
+
+#span1 {
+  font-weight: normal;
+}
+
+/* Media starts here */
+
+@media (max-width: 1000px) {
+  .heading {
+    font-size: 30pt;
+  }
+
+  #item1-1 {
+    grid-column-start: 1;
+    grid-column-end: end;
+  }
+
+  #item1-2 {
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 25pt;
+  }
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 25pt;
+  }
+
+  .link {
+    font-size: 16pt;
+  }
+
+  #item1-2 {
+    font-size: 15pt;
+  }
+}
+
+@media (max-width: 620px) {
+  .heading {
+    font-size: 20pt;
+  }
+
+  .link {
+    font-size: 14pt;
+  }
+
+  #container1 {
+    grid-template-rows: 380px 45% 40%;
+  }
+
+  #item1-1 {
+    height: 380px;
+  }
+
+  #item1-2 {
+    font-size: 13pt;
+  }
+}
+
+@media (max-width: 540px) {
+  .link {
+    font-size: 13pt;
+  }
+}
